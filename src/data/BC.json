@@ -1,0 +1,199 @@
+{
+	"2000": {
+		"best": {
+			"name": "Small or Medium Latte",
+			"products": [
+				{
+					"price": 4.49,
+					"name": "Med French Vanilla Latte (2% Milk)",
+					"avgPer1k": 2.25
+				},
+				{
+					"price": 4.49,
+					"name": "Med Caramel Latte (2% Milk)",
+					"avgPer1k": 2.25
+				},
+				{
+					"price": 4.49,
+					"name": "Med Latte with sugar free syrup (2% Milk)",
+					"avgPer1k": 2.25
+				}
+			],
+			"avgPer1k": 2.25
+		},
+		"worst": {
+			"name": "Small or Medium Premium Roast Coffee",
+			"products": [
+				{ "price": 1, "name": "Sml Premium Roast Coffee", "avgPer1k": 0.5 },
+				{
+					"price": 1,
+					"name": "Sml Premium Roast Decaf Coffee",
+					"avgPer1k": 0.5
+				}
+			],
+			"avgPer1k": 0.5
+		}
+	},
+	"4000": {
+		"best": {
+			"name": "Large Latte",
+			"products": [
+				{
+					"price": 4.89,
+					"name": "Lrg French Vanilla Latte  (2% Milk)",
+					"avgPer1k": 1.22
+				},
+				{
+					"price": 4.89,
+					"name": "Lrg Caramel Latte (2% Milk)",
+					"avgPer1k": 1.22
+				},
+				{
+					"price": 4.89,
+					"name": "Lrg Latte with sugar free syrup (2% Milk)",
+					"avgPer1k": 1.22
+				}
+			],
+			"avgPer1k": 1.22
+		},
+		"worst": {
+			"name": "Large Premium Roast Coffee",
+			"products": [
+				{ "price": 1.69, "name": "Lrg Premium Roast Coffee", "avgPer1k": 0.42 },
+				{
+					"price": 1.69,
+					"name": "Lrg Premium Roast Decaf Coffee",
+					"avgPer1k": 0.42
+				}
+			],
+			"avgPer1k": 0.42
+		}
+	},
+	"6000": {
+		"best": {
+			"name": "Large Fries",
+			"products": [{ "price": 5.49, "name": "Lrg Fries", "avgPer1k": 0.92 }],
+			"avgPer1k": 0.92
+		},
+		"worst": {
+			"name": "Junior Chicken",
+			"products": [
+				{ "price": 3.69, "name": "Junior Chicken", "avgPer1k": 0.61 }
+			],
+			"avgPer1k": 0.61
+		}
+	},
+	"10000": {
+		"best": {
+			"name": "McCrispy",
+			"products": [{ "price": 7.89, "name": "McCrispy", "avgPer1k": 0.79 }],
+			"avgPer1k": 0.79
+		},
+		"worst": {
+			"name": "Happy Meal",
+			"products": [
+				{
+					"price": 4.89,
+					"name": "Happy Meal Hamburger with Mini Fry",
+					"avgPer1k": 0.49
+				},
+				{
+					"price": 4.89,
+					"name": "Happy Meal Hamburger with Small Fries",
+					"avgPer1k": 0.49
+				},
+				{
+					"price": 4.89,
+					"name": "Happy Meal Hamburger with Apple Slices",
+					"avgPer1k": 0.49
+				},
+				{
+					"price": 4.89,
+					"name": "Happy Meal Grilled Cheese with Apple Slices",
+					"avgPer1k": 0.49
+				},
+				{
+					"price": 4.89,
+					"name": "Happy Meal Grilled Cheese with Mini Fries",
+					"avgPer1k": 0.49
+				},
+				{
+					"price": 4.89,
+					"name": "Happy Meal Grilled Cheese with Small Fries",
+					"avgPer1k": 0.49
+				},
+				{
+					"price": 4.89,
+					"name": "Happy Meal Lettuce & Tomato Snack Wrap w/ Apple Slices",
+					"avgPer1k": 0.49
+				},
+				{
+					"price": 4.89,
+					"name": "Happy Meal Lettuce & Tomato Snack Wrap with Mini Fries",
+					"avgPer1k": 0.49
+				},
+				{
+					"price": 4.89,
+					"name": "Happy Meal Lettuce & Tomato Snack Wrap with Small Fries",
+					"avgPer1k": 0.49
+				}
+			],
+			"avgPer1k": 0.49
+		}
+	},
+	"14000": {
+		"best": {
+			"name": "Quarter Pounder with Cheese Extra Value Meal",
+			"products": [
+				{
+					"price": 13.69,
+					"name": "Quarter Pounder with Cheese Extra Value Meal",
+					"avgPer1k": 0.98
+				}
+			],
+			"avgPer1k": 0.98
+		},
+		"worst": {
+			"name": "10 Chicken McNuggets",
+			"products": [
+				{ "price": 8.99, "name": "10 Chicken McNuggets", "avgPer1k": 0.64 }
+			],
+			"avgPer1k": 0.64
+		}
+	},
+	"best": {
+		"points": "2000",
+		"products": [
+			{
+				"price": 4.49,
+				"name": "Med French Vanilla Latte (2% Milk)",
+				"avgPer1k": 2.25
+			},
+			{
+				"price": 4.49,
+				"name": "Med Caramel Latte (2% Milk)",
+				"avgPer1k": 2.25
+			},
+			{
+				"price": 4.49,
+				"name": "Med Latte with sugar free syrup (2% Milk)",
+				"avgPer1k": 2.25
+			}
+		],
+		"avgPer1k": 2.25,
+		"name": "Small or Medium Latte"
+	},
+	"worst": {
+		"points": "4000",
+		"products": [
+			{ "price": 1.69, "name": "Lrg Premium Roast Coffee", "avgPer1k": 0.42 },
+			{
+				"price": 1.69,
+				"name": "Lrg Premium Roast Decaf Coffee",
+				"avgPer1k": 0.42
+			}
+		],
+		"avgPer1k": 0.42,
+		"name": "Large Premium Roast Coffee"
+	}
+}
