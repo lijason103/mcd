@@ -24,6 +24,29 @@ const faqs = [
   }
 ];
 
+// Generate FAQ structured data for SEO
+function FAQStructuredData() {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqs.map(faq => ({
+      "@type": "Question",
+      "name": faq.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.answer
+      }
+    }))
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+    />
+  );
+}
+
 export function FAQSection() {
   const [openIndex, setOpenIndex] = useState(null);
 
@@ -32,33 +55,46 @@ export function FAQSection() {
   };
 
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-16 bg-gray-50" aria-labelledby="faq-heading" itemScope itemType="https://schema.org/FAQPage">
+      <FAQStructuredData />
       <div className="max-w-4xl mx-auto px-6">
-        <h2 className="text-3xl font-bold text-center mb-12">Frequently Asked Questions</h2>
-        
+        <h2 id="faq-heading" className="text-3xl font-bold text-center mb-12">Frequently Asked Questions</h2>
+
         <div className="space-y-4">
           {faqs.map((faq, index) => (
-            <div
+            <article
               key={index}
               className="bg-white rounded-xl border-2 border-gray-200 overflow-hidden transition-all"
+              itemScope
+              itemProp="mainEntity"
+              itemType="https://schema.org/Question"
             >
               <button
                 onClick={() => toggleFAQ(index)}
                 className="w-full px-6 py-5 flex items-center justify-between text-left hover:bg-gray-50 transition-colors"
+                aria-expanded={openIndex === index}
+                aria-controls={`faq-answer-${index}`}
               >
-                <span className="font-semibold pr-4">{faq.question}</span>
+                <h3 className="font-semibold pr-4" itemProp="name">{faq.question}</h3>
                 <ChevronDown
                   className={`w-5 h-5 text-gray-600 transition-transform flex-shrink-0 ${
                     openIndex === index ? 'rotate-180' : ''
                   }`}
+                  aria-hidden="true"
                 />
               </button>
-              {openIndex === index && (
-                <div className="px-6 pb-5 text-gray-600">
-                  {faq.answer}
-                </div>
-              )}
-            </div>
+              <div
+                id={`faq-answer-${index}`}
+                className={`px-6 text-gray-600 transition-all duration-200 ${
+                  openIndex === index ? 'pb-5 max-h-40' : 'max-h-0 overflow-hidden'
+                }`}
+                itemScope
+                itemProp="acceptedAnswer"
+                itemType="https://schema.org/Answer"
+              >
+                <p itemProp="text">{faq.answer}</p>
+              </div>
+            </article>
           ))}
         </div>
       </div>

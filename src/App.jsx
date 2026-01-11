@@ -50,13 +50,12 @@ function transformData(data) {
   };
 }
 
-// Transform BC data and use for all regions (Ontario and Calgary will use same data for now)
+// Transform BC data and use for all regions (Ontario will use same data for now)
 const bcTransformed = transformData(bcData);
 
 const pricingData = {
   BC: bcTransformed,
-  Ontario: bcTransformed,
-  Calgary: bcTransformed
+  Ontario: bcTransformed
 };
 
 export default function App() {
@@ -91,7 +90,6 @@ export default function App() {
               >
                 <option value="BC">British Columbia</option>
                 <option value="Ontario" disabled>Ontario (Coming Soon)</option>
-                <option value="Calgary" disabled>Calgary, AB (Coming Soon)</option>
               </select>
             </div>
           </div>
